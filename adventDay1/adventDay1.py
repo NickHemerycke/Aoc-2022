@@ -1,4 +1,12 @@
-calorieList = [1000,2000,3000,0,4000,0,5000,6000,0,7000,8000,9000,0,10000,0]
+calorieList = []
+
+with open("adventDay1.txt", "r") as file:
+
+    for line in file:
+
+        line = int(line)
+        calorieList.append(line)
+
 
 elf = "elf"
 
@@ -66,7 +74,7 @@ print("elf or elves number " + index + " with a total of " + biggestNumber + " c
 
         
 
-
+#remove een nul want ja kheb me text file verkeerd append oops
 
 
 
