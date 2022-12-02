@@ -63,13 +63,71 @@ def scoreCalc(matches):
 
                 score = score + 1
 
+                counter = counter + 1
+
             elif(gamma[counter] == "Y"):
 
                 score = score + 2
 
+                counter = counter + 1
+
             elif(gamma[counter] == "Z"):
 
                 score = score + 3
+
+                counter = counter + 1
+
+        elif(i == "draw"):
+
+            score = score + 3
+
+            if(gamma[counter] == "X"):
+
+                score = score + 1
+
+                counter = counter + 1
+
+            elif(gamma[counter] == "Y"):
+
+                score = score + 2
+
+                counter = counter + 1
+
+            elif(gamma[counter] == "Z"):
+
+                score = score + 3
+
+                counter = counter + 1
+
+        elif(i == "loss"):
+
+            score = score
+
+            if(gamma[counter] == "X"):
+
+                score = score + 1
+
+                counter = counter + 1
+
+            elif(gamma[counter] == "Y"):
+
+                score = score + 2
+
+                counter = counter + 1
+
+            elif(gamma[counter] == "Z"):
+
+                score = score + 3
+
+                counter = counter + 1
+
+    return score
+
+
+print(scoreCalc(matchList))
+
+
+
             
 
 
